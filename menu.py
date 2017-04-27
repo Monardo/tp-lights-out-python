@@ -1,14 +1,23 @@
 # Este va a ser el menu
 
 def saludoBienvenida():
-    print("Bienvenido al juego Lights Out")
+    print()
+    print()
+    print("                          *************************************************************************")
+    print("                          ***************  BIENVENIDO AL JUEGO LIGHTS OUT !!!!!!!  ****************")
+    print("                          *************************************************************************")
+    print()
+    print()
+
     modo=input(print("Ingrese A para jugar en modo Aleatoreo, ingrese P para jugar en modo Predeterminado o S para salir del juego"))
-    if modo == 'S':
-        print("Ud ha salido del juego")
-    elif modo == 'A':
+    if modo == 'S' or modo == 's':
+        print("        Ud está saliendo del juego !!!!!!!!")
+        exit
+    elif modo == 'A' or modo == 'a':
         print("Ud. seleccionó el modo Aleatoreo")
-    elif modo == 'P':
+    elif modo == 'P' or modo == 'p':
         print("Ud seleccionó el modo Predeterminado")
     else:
         print("Ud ingreso un valor incorrecto, por favor ingrese nuevamente su eleccion")
+        saludoBienvenida()
 
