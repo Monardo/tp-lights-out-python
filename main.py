@@ -1,4 +1,2 @@
 import menu
-
-
 menu.saludoBienvenida()
