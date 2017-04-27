@@ -1,4 +1,5 @@
 # Este va a ser el menu
+import modoPredeterminado
 
 def saludoBienvenida():
     print()
@@ -17,6 +18,7 @@ def saludoBienvenida():
         print("Ud. seleccionó el modo Aleatoreo")
     elif modo == 'P' or modo == 'p':
         print("Ud seleccionó el modo Predeterminado")
+        modoPredeterminado.iniciarModoPredeterminado()
     else:
         print("Ud ingreso un valor incorrecto, por favor ingrese nuevamente su eleccion")
         saludoBienvenida()
