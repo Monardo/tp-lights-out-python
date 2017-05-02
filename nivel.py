@@ -1,4 +1,3 @@
-# se desarrollara el nivel 1 del juego
 
 def getNivelUno():
     level1=[
@@ -12,12 +11,10 @@ def getNivelUno():
     return level1
 
 def mostrarNivel(nivel):
-
     for elemento in nivel:
-
         linea = ''
-
         for subelemento in elemento:
             linea = linea +' '+ subelemento
-
         print(linea)
+
+
