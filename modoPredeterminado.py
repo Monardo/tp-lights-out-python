@@ -10,4 +10,8 @@ def iniciarModoPredeterminado():
     nivelUno = nivel.getNivelUno()
     nivel.mostrarNivel(nivelUno)
 
+    print("-------------------------------------------------")
+
+    coordenada=input("Ingrese la coordenada :  ")
+
 
