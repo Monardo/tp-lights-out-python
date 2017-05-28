@@ -11,12 +11,13 @@ def saludoBienvenida():
     print("")
 
     modo = raw_input("Ingrese A para jugar en modo Aleatoreo, ingrese P para jugar en modo Predeterminado o S para salir del juego  ")
-    if modo == 'S' or modo == 's':
+    modo.lower()
+    if modo == 's':
         print("        Ud esta saliendo del juego !!!!!!!!")
         exit
-    elif modo == 'A' or modo == 'a':
+    elif modo == 'a':
         print("Ud. selecciono el modo Aleatoreo")
-    elif modo == 'P' or modo == 'p':
+    elif modo == 'p':
         print("Ud selecciono el modo Predeterminado")
         modoPredeterminado.iniciarModoPredeterminado()
     else:
