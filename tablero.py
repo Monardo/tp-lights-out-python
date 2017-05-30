@@ -1,6 +1,6 @@
 
 def mostrarNivel(nivel):
-    print "    ", "A", "B", "C", "D", "E"
+    print("    ", "A", "B", "C", "D", "E")
     ["1 | "]
     ["2 | "]
     ["3 | "]
