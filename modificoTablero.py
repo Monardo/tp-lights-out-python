@@ -1,17 +1,8 @@
 import nivel
 import modoPredeterminado
-def coordenadaCambiaMatriz(x, y, z):
-    nivelactual = x
-    a = nivel.getNivel(nivelactual)
-    coordenadaLetraTransformada = y
-    coordenadaNumerica = z
+def coordenadaCambiaMatriz(nivelactual, coordenadas):
 
+    tablero = nivel.getNivel(nivelactual)
+    coordenadasVecinas = getCoordenadasVecinas(tablero,coordenadas)
 
-    if a[y][z] == "o":
-        a[y][z] = "."
-
-    else:
-        a[y][z] = "o"
-
-    return a
-
+    #recorrer la lista de coordernadas vecinas y por cada una cambiar su valor, tambien cambiar el valor de la coordenadas
