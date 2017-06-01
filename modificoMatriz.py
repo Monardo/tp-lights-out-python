@@ -1,13 +1,9 @@
 import nivel
-import modoPredeterminado
-def coordenadaCambiaMatriz():
-    nivel.getNivelUno()
+import pidoCoordenada
 
-    x = coordenadaNumerica
-    y = coordenadaLetraTransformada
+def coordenadaCambiaMatriz(coordenadaNumerica, coordenadaLetraTransformada):
 
     a = nivel.getNivel(nivelactual)
-    if a[x, y] == 'o':
-        level1.pop(x, y)
+    if a[coordenadaNumerica, coordenadaLetraTransformada] == 'o':
+        level1.pop(coordenadaNumerica, coordenadaLetraTransformada)
 
-coordenadaCambiaMatriz()
