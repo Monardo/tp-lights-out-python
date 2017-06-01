@@ -15,14 +15,14 @@ def recibeCoordenadaDeJuego(ingresoCoordenada):
         coordenadaNumerica = int(ingresoCoordenada[1])
         coordenadaLetraTransformada = coordenasEnLetrasAPosiciones[ingresoCoordenada[0]]
         coordenadaLetraTransformada = coordenadaLetraTransformada
+        coordenadaEnTupla = (coordenadaLetraTransformada, coordenadaNumerica)
 
         if ingresoCoordenada[0] not in listaLetraPermitidas or ingresoCoordenada[1] not in listaNumerosPermitidos:
             print ("Ud ha ingresado una coordenada invalida. ")
             recibeCoordenadaDeJuego()
         else:
             nivelactual = 1
-            tableroNuevo = []
-            tableroNuevo = modificoTablero.coordenadaCambiaMatriz(nivelactual, coordenadaLetraTransformada, coordenadaNumerica)
+            tableroNuevo = modificoTablero.coordenadaCambiaMatriz(nivelactual, coordenadaEnTupla)
     else:
         print ("Ud ha ingresado una coordenada invalida. ")
         recibeCoordenadaDeJuego()
