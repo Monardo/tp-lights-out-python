@@ -1,11 +1,9 @@
-
-def eliminaVecinosInvalidos(vecinos):
+def eliminaVecinosInvalidos(vecinos,tamaño):
 
     vecinosValidos = []
 
     for tupla in vecinos:
-
-        if tupla[0] >= 0 and tupla[1] >= 0:
+        if tupla[0] >= 0 and tupla[1] >= 0 and tupla[0] < tamaño and tupla[1] < tamaño:
 
             vecinosValidos.append(tupla)
 
@@ -14,7 +12,7 @@ def eliminaVecinosInvalidos(vecinos):
 
 def devuelveCoordenadasVecinas(tablero, coordenadaEnTupla):
     vecinos = []
-
+    tamaño = len(tablero)
     fila = coordenadaEnTupla[0]
     columna = coordenadaEnTupla[1]
 
@@ -25,5 +23,5 @@ def devuelveCoordenadasVecinas(tablero, coordenadaEnTupla):
 
     vecinos = [coordenadaVecinoSuperior, coordenadaVecinoInferior, coordenadaVecinoIzquierda, coordenadaVecinoDerecha]
 
-    return eliminaVecinosInvalidos(vecinos)
+    return eliminaVecinosInvalidos(vecinos,tamaño)
 
