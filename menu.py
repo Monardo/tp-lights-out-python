@@ -10,7 +10,7 @@ def saludoBienvenida():
     print("")
     print("")
 
-    modo = raw_input("Ingrese A para jugar en modo Aleatoreo, ingrese P para jugar en modo Predeterminado o S para salir del juego  ")
+    modo = input("Ingrese A para jugar en modo Aleatoreo, ingrese P para jugar en modo Predeterminado o S para salir del juego  ")
     modo.lower()
     if modo == 's':
         print("        Ud esta saliendo del juego !!!!!!!!")
