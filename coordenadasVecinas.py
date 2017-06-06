@@ -16,7 +16,7 @@ def devuelveCoordenadasVecinas(tablero, coordenadaEnTupla):
     vecinos = []
 
     fila = coordenadaEnTupla[0]
-    columna = coordenadaEnTupla[0]
+    columna = coordenadaEnTupla[1]
 
     coordenadaVecinoSuperior = (fila-1,columna)
     coordenadaVecinoInferior = (fila+1, columna)
@@ -26,3 +26,4 @@ def devuelveCoordenadasVecinas(tablero, coordenadaEnTupla):
     vecinos = [coordenadaVecinoSuperior, coordenadaVecinoInferior, coordenadaVecinoIzquierda, coordenadaVecinoDerecha]
 
     return eliminaVecinosInvalidos(vecinos)
+
