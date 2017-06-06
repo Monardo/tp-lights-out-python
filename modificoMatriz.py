@@ -1,7 +1,7 @@
 import nivel
 import pidoCoordenada
 
-def coordenadaCambiaMatriz(coordenadaNumerica, coordenadaLetraTransformada):
+def coordenadaCambiaMatriz():
 
     a = nivel.getNivel(nivelactual)
     if a[coordenadaNumerica, coordenadaLetraTransformada] == 'o':
