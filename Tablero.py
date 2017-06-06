@@ -6,10 +6,11 @@ def mostrarNivel(nivel):
     ["3 | "]
     ["4 | "]
     ["5 | "]
-
+    numeroDeFila = 1
     for elemento in nivel:
         linea = ''
         for subelemento in elemento:
             linea = linea +' '+ subelemento
 
-        print ("1 | " + (linea))
+        print (str(numeroDeFila) + "| " + (linea))
+        numeroDeFila += 1
