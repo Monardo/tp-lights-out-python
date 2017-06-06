@@ -22,7 +22,7 @@ class CoordenadasVecinasTestCase(unittest.TestCase):
 
     def test_devuelveCoordenadasVecinasDevuelve2vecinosParaUnVerticeDelTablero(self):
         tablero = [["o", ".", "."], ["o", ".", "."], ["o", ".", "."]]
-        coordenadaCentral = (0, 0)
+        coordenadaCentral = (2, 2)
         vecinos = coordenadasVecinas.devuelveCoordenadasVecinas(tablero, coordenadaCentral)
         self.assertEqual(len(vecinos), 2)
 
