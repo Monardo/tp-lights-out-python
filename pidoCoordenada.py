@@ -1,4 +1,4 @@
-import tablero
+import Tablero
 import modificoTablero
 import calculaSituacionJuego
 import modoPredeterminado
@@ -12,22 +12,23 @@ def recibeCoordenadaDeJuego(ingresoCoordenada):
 
     if len(ingresoCoordenada) == 2:
         coordenasEnLetrasAPosiciones = {'a': 0, 'b': 1, 'c': 2, 'd': 3, 'e': 4}
-        coordenadaNumerica = int(ingresoCoordenada[1])
+        coordenadaNumerica = int(ingresoCoordenada[1])-1
         coordenadaLetraTransformada = coordenasEnLetrasAPosiciones[ingresoCoordenada[0]]
-        coordenadaLetraTransformada = coordenadaLetraTransformada
-        coordenadaEnTupla = (coordenadaLetraTransformada, coordenadaNumerica)
+        coordenadaEnTupla = (coordenadaNumerica,coordenadaLetraTransformada)
 
-        if ingresoCoordenada[0] not in listaLetraPermitidas or ingresoCoordenada[1] not in listaNumerosPermitidos:
+        if coordenadaEnTupla[0] not in listaLetraPermitidas or coordenadaEnTupla[1] not in listaNumerosPermitidos:
             print ("Ud ha ingresado una coordenada invalida. ")
-            recibeCoordenadaDeJuego()
+            ingresoCoordenada = input("Reingrese la coordenada: ")
+            recibeCoordenadaDeJuego(ingresoCoordenada)
         else:
             nivelactual = 1
             tableroNuevo = modificoTablero.coordenadaCambiaMatriz(nivelactual, coordenadaEnTupla)
     else:
         print ("Ud ha ingresado una coordenada invalida. ")
-        recibeCoordenadaDeJuego()
+        ingresoCoordenada = input("Reingrese la coordenada: ")
+        recibeCoordenadaDeJuego(ingresoCoordenada)
     jugadas = 0
-    tablero.mostrarNivel(tableroNuevo)
+    Tablero.mostrarNivel(tableroNuevo)
     preguntoSiGana = calculaSituacionJuego.siTableroApagadoDevuelveTrue(tableroNuevo)
     if preguntoSiGana == True:
         print ("Ud ha ganado el juego. Felicitaciones ")
