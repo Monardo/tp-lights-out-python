@@ -1,11 +1,6 @@
 
 def mostrarNivel(nivel):
-    print("    ", "A", "B", "C", "D", "E")
-    ["1 | "]
-    ["2 | "]
-    ["3 | "]
-    ["4 | "]
-    ["5 | "]
+    print("   ", "A", "B", "C", "D", "E")
     numeroDeFila = 1
     for elemento in nivel:
         linea = ''

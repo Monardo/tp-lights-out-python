@@ -1,4 +1,4 @@
-def eliminaVecinosInvalidos(vecinos,tamaño):
+def eliminaVecinosInvalidos(vecinos, tamaño):
 
     vecinosValidos = []
 
@@ -12,6 +12,7 @@ def eliminaVecinosInvalidos(vecinos,tamaño):
 
 def devuelveCoordenadasVecinas(tablero, coordenadaEnTupla):
     vecinos = []
+
     tamaño = len(tablero)
     fila = coordenadaEnTupla[0]
     columna = coordenadaEnTupla[1]
@@ -23,5 +24,5 @@ def devuelveCoordenadasVecinas(tablero, coordenadaEnTupla):
 
     vecinos = [coordenadaVecinoSuperior, coordenadaVecinoInferior, coordenadaVecinoIzquierda, coordenadaVecinoDerecha]
 
-    return eliminaVecinosInvalidos(vecinos,tamaño)
+    return eliminaVecinosInvalidos(vecinos, tamaño)
 

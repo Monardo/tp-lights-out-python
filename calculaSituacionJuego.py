@@ -1,8 +1,9 @@
 
-def siTableroApagadoDevuelveTrue(tableroNuevo):
+def estaTableroCompletamenteApagado(tableroNuevo):
 
+    for fila in tableroNuevo:
+        for celda in fila:
+            if celda == 'o':
+                return False
 
-    if "o" not in tableroNuevo:
-        return True
-    else:
-        return False
+    return True
