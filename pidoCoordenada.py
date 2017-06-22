@@ -3,15 +3,18 @@ import modificoTablero
 import calculaSituacionJuego
 import modoPredeterminado
 import usuario
+import logger
+import menu
+
 def recibeCoordenadaDeJuego(ingresoCoordenada):
+
     listaLetraPermitidas = ['a', 'b', 'c', 'd', 'e']
     listaNumerosPermitidos = ['1', '2', '3', '4', '5']
 
-
-    if ingresoCoordenada == "":
-        print("Ud ha ingresado una coordenada invalida. ")
-        ingresoCoordenada = input("Reingrese la coordenada: ")
-        recibeCoordenadaDeJuego(ingresoCoordenada)
+    if ingresoCoordenada == 's':
+        print("        Ud esta saliendo del juego !!!!!!!!")
+        exit
+        menu.saludoBienvenida()
 
     if ingresoCoordenada == 'r':
         print("Ud ha seleccionado reiniciar el juego")
@@ -38,6 +41,7 @@ def recibeCoordenadaDeJuego(ingresoCoordenada):
 
     else:
         print("Ud ha ingresado una coordenada invalida. ")
+        logger.guardar("Ingreso de coordenada invalida: " + ingresoCoordenada)
         ingresoCoordenada = input("Reingrese la coordenada: ")
         recibeCoordenadaDeJuego(ingresoCoordenada)
 

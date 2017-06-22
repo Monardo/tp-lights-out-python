@@ -1,5 +1,6 @@
 # Este va a ser el menu
 import modoPredeterminado
+import logger
 
 def saludoBienvenida():
     print("")
@@ -14,6 +15,7 @@ def saludoBienvenida():
     modo.lower()
     if modo == 's':
         print("        Ud esta saliendo del juego !!!!!!!!")
+        logger.cerrarArchivoLog()
         exit
     elif modo == 'a':
         print("Ud. selecciono el modo Aleatoreo")
@@ -22,5 +24,6 @@ def saludoBienvenida():
         modoPredeterminado.iniciarModoPredeterminado()
     else:
         print("Ud ingreso un valor incorrecto, por favor ingrese nuevamente su eleccion")
+        logger.guardar("Ingreso de modo incorrecto en Menu: " + modo)
         saludoBienvenida()
 
