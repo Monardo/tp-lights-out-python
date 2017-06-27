@@ -1,10 +1,7 @@
-import nivel
-import modificoTablero
-import calculaSituacionJuego
 import modoPredeterminado
-import usuario
 import logger
 import menu
+import juego
 
 def recibeCoordenadaDeJuego(ingresoCoordenada):
 
@@ -19,6 +16,8 @@ def recibeCoordenadaDeJuego(ingresoCoordenada):
     if ingresoCoordenada == 'r':
         print("Ud ha seleccionado reiniciar el juego")
         modoPredeterminado.iniciarModoPredeterminado()
+        juego.jugar()
+
 
     if ingresoCoordenada[0] not in listaLetraPermitidas or ingresoCoordenada[1] not in listaNumerosPermitidos:
         print("Ud ha ingresado una coordenada invalida ")
@@ -35,9 +34,6 @@ def recibeCoordenadaDeJuego(ingresoCoordenada):
             print("Ud ha ingresado una coordenada invalida. ")
             ingresoCoordenada = input("Reingrese la coordenada: ")
             recibeCoordenadaDeJuego(ingresoCoordenada)
-        else:
-            nivelactual = nivel.getNivel(1)
-            tableroNuevo = modificoTablero.coordenadaCambiaMatriz(nivelactual, coordenadaEnTupla)
 
     else:
         print("Ud ha ingresado una coordenada invalida. ")
@@ -46,11 +42,5 @@ def recibeCoordenadaDeJuego(ingresoCoordenada):
         recibeCoordenadaDeJuego(ingresoCoordenada)
 
 
-    nivelGanado = calculaSituacionJuego.estaTableroCompletamenteApagado(tableroNuevo)
-
-    if not nivelGanado:
-        print(usuario.datosDelUsuario())
-
-    else:
-        print("Ud ha ganado el nivel. Felicitaciones.  ")
+    return coordenadaEnTupla
 

@@ -7,5 +7,5 @@ def mostrarNivel(nivel):
         for subelemento in elemento:
             linea = linea +' '+ subelemento
 
-        print (str(numeroDeFila) + "| " + (linea))
+        print(str(numeroDeFila) + "| " + (linea))
         numeroDeFila += 1

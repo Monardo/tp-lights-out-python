@@ -2,3 +2,36 @@
 [2017-06-22 20:08:57.378283] Ingreso de modo incorrecto en Menu: modoincorrectooo
 [2017-06-22 20:09:01.964545] Ingreso de modo incorrecto en Menu: otromodoincorrecto
 [2017-06-22 20:09:18.691502] Fin del regtistro de errores
+[2017-06-27 18:17:11.267543] Iniciando registro de errores
+[2017-06-27 18:20:12.870930] Iniciando registro de errores
+[2017-06-27 18:21:00.132633] Iniciando registro de errores
+[2017-06-27 18:28:06.823039] Iniciando registro de errores
+[2017-06-27 18:29:49.257898] Iniciando registro de errores
+[2017-06-27 18:32:55.269537] Iniciando registro de errores
+[2017-06-27 18:36:45.037679] Iniciando registro de errores
+[2017-06-27 19:08:27.791510] Iniciando registro de errores
+[2017-06-27 19:13:11.319727] Iniciando registro de errores
+[2017-06-27 19:28:34.941555] Iniciando registro de errores
+[2017-06-27 19:30:42.489851] Iniciando registro de errores
+[2017-06-27 19:42:22.376882] Iniciando registro de errores
+[2017-06-27 19:59:18.605007] Iniciando registro de errores
+[2017-06-27 19:59:52.375938] Iniciando registro de errores
+[2017-06-27 20:00:21.125583] Iniciando registro de errores
+[2017-06-27 20:00:35.349396] Iniciando registro de errores
+[2017-06-27 20:00:45.095954] Iniciando registro de errores
+[2017-06-27 20:01:10.071382] Iniciando registro de errores
+[2017-06-27 20:04:07.602536] Iniciando registro de errores
+[2017-06-27 20:05:09.830096] Iniciando registro de errores
+[2017-06-27 20:05:48.680318] Iniciando registro de errores
+[2017-06-27 20:06:57.401248] Iniciando registro de errores
+[2017-06-27 20:07:18.372448] Iniciando registro de errores
+[2017-06-27 20:08:27.127380] Iniciando registro de errores
+[2017-06-27 20:09:01.091323] Iniciando registro de errores
+[2017-06-27 20:09:52.000235] Iniciando registro de errores
+[2017-06-27 20:10:08.345170] Iniciando registro de errores
+[2017-06-27 20:10:59.153076] Iniciando registro de errores
+[2017-06-27 20:11:43.673622] Iniciando registro de errores
+[2017-06-27 20:12:54.545676] Iniciando registro de errores
+[2017-06-27 20:14:39.627686] Iniciando registro de errores
+[2017-06-27 20:15:06.967250] Iniciando registro de errores
+[2017-06-27 20:15:46.775527] Iniciando registro de errores

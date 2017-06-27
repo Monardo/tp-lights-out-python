@@ -1,6 +1,7 @@
 # Este va a ser el menu
 import modoPredeterminado
 import logger
+import juego
 
 def saludoBienvenida():
     print("")
@@ -22,6 +23,7 @@ def saludoBienvenida():
     elif modo == 'p':
         print("Ud selecciono el modo Predeterminado")
         modoPredeterminado.iniciarModoPredeterminado()
+        juego.jugar()
     else:
         print("Ud ingreso un valor incorrecto, por favor ingrese nuevamente su eleccion")
         logger.guardar("Ingreso de modo incorrecto en Menu: " + modo)
