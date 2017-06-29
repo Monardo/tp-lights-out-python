@@ -1,49 +1,35 @@
+nivel1 = []
+nivel2 = []
+nivel3 = []
+nivel4 = []
+nivel5 = []
 
-nivel1 = [
-    ["o", "o", ".", "o", "o"],
-    ["o", ".", "o", ".", "o"],
-    [".", "o", "o", "o", "."],
-    ["o", ".", "o", ".", "o"],
-    ["o", "o", ".", "o", "o"],
-]
-
-nivel2 = [
-    [".", "o", ".", "o", "."],
-    ["o", "o", ".", "o", "o"],
-    [".", "o", ".", "o", "."],
-    ["o", ".", "o", ".", "o"],
-    ["o", ".", "o", ".", "o"],
-]
-
-nivel3 = [
-    ["o", ".", ".", ".", "o"],
-    ["o", "o", ".", "o", "o"],
-    [".", ".", "o", ".", "."],
-    ["o", ".", "o", ".", "."],
-    ["o", ".", "o", "o", "."],
-]
-
-nivel4 = [
-    ["o", "o", ".", "o", "o"],
-    [".", ".", ".", ".", "."],
-    ["o", "o", ".", "o", "o"],
-    [".", ".", ".", ".", "o"],
-    ["o", "o", ".", ".", "."],
-]
-
-nivel5 = [
-    [".", ".", ".", "o", "o"],
-    [".", ".", ".", "o", "o"],
-    [".", ".", ".", ".", "."],
-    ["o", "o", ".", ".", "."],
-    ["o", "o", ".", ".", "."],
-]
-
-nivles = [nivel1,nivel2,nivel3,nivel4,nivel5]
-
+niveles = [nivel1,nivel2,nivel3,nivel4,nivel5]
 
 def getNivel(nivelactual):
     int(nivelactual)
     nivelactual = nivelactual - 1
-    return nivles[nivelactual]
+    return niveles[nivelactual]
 
+
+def cargarNivelesDesdeElArchivo():
+    archivo = open("seteoDeTableros.txt", "r")
+    return archivo
+
+def cargarNivel():
+
+    archivoDeNiveles = cargarNivelesDesdeElArchivo()
+
+    for linea in archivoDeNiveles:
+        linea = linea.rstrip("\n")
+        nivel1.append(linea)
+        if linea == "":
+            break
+
+
+    print(nivel1)
+
+
+    print(linea)
+
+cargarNivel()
