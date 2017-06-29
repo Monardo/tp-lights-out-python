@@ -5,7 +5,7 @@ import pidoCoordenada
 import modificoTablero
 import calculaSituacionJuego
 import modoPredeterminado
-
+import menu
 def jugar():
 
 
