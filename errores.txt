@@ -35,3 +35,9 @@
 [2017-06-27 20:14:39.627686] Iniciando registro de errores
 [2017-06-27 20:15:06.967250] Iniciando registro de errores
 [2017-06-27 20:15:46.775527] Iniciando registro de errores
+[2017-06-29 17:17:55.061745] Iniciando registro de errores
+[2017-06-29 17:28:05.895341] Iniciando registro de errores
+[2017-06-29 18:07:51.280737] Iniciando registro de errores
+[2017-06-29 18:08:54.042647] Iniciando registro de errores
+[2017-06-29 18:09:30.029311] Iniciando registro de errores
+[2017-06-29 18:20:31.125699] Iniciando registro de errores

@@ -7,8 +7,12 @@ import calculaSituacionJuego
 import modoPredeterminado
 
 def jugar():
-    nivelInicio = nivel.getNivel(usuario.nivelTablero)
-    Tablero.mostrarNivel(nivelInicio)
+
+
+    if usuario.cantidadJugadas == 0:
+
+        nivelInicio = nivel.getNivel(usuario.nivelTablero)
+        Tablero.mostrarNivel(nivelInicio)
 
     ingresoCoordenada = input("Ingrese la coordenada :  ")
     ingresoCoordenada.lower()
@@ -17,23 +21,29 @@ def jugar():
     nivelactual = nivel.getNivel(usuario.nivelTablero)
     coordenada = pidoCoordenada.recibeCoordenadaDeJuego(ingresoCoordenada)
     tableroNuevo = modificoTablero.coordenadaCambiaMatriz(nivelactual, coordenada)
+    print("")
     Tablero.mostrarNivel(tableroNuevo)
     usuario.incrementarCantidadJuagadas()
-    print("Ud lleva " + str(usuario.cantidadJugadas) + " jugadas de las 15 permitidas")
+    print("")
+    print("Ud lleva " + str(usuario.cantidadJugadas) + " jugadas de 15 permitidas")
     nivelGanado = calculaSituacionJuego.estaTableroCompletamenteApagado(tableroNuevo)
 
     if not nivelGanado:
        elniveldeljugador = usuario.nivelJugador
-       print(str(elniveldeljugador))
+       print("Nivel " + str(elniveldeljugador))
+       jugar()
     else:
+        print("")
         print("Ud ha ganado el nivel. Felicitaciones.  ")
         print("Ud tiene 300 puntos")
+        print("")
         queQuiereHacerElJugador = input("ingrese S para salir del juego, ingrese R para reiniciar o ingrese Y para seguir jugando ")
 
         if queQuiereHacerElJugador == 'Y':
             nivelactual = usuario.nivelTablero + 1
             proximoNivel = nivel.getNivel(nivelactual)
             Tablero.mostrarNivel(proximoNivel)
+            jugar()
 
         if queQuiereHacerElJugador == 'S':
             print("        Ud esta saliendo del juego !!!!!!!!")

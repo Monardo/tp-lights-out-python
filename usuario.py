@@ -3,12 +3,14 @@ puntaje = 0
 nivelJugador = 1
 nivelTablero = 1
 
-
+import juego
 def incrementarCantidadJuagadas():
     global cantidadJugadas
     cantidadJugadas += 1
 
 
-def nivelJugador():
+def pasarDeNivel():
     global nivelJugador
-    nivelJugador =+ 1
+    nivelJugador = nivelJugador + 1
+
+
