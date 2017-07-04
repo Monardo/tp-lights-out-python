@@ -1,10 +1,5 @@
-nivel1 = []
-nivel2 = []
-nivel3 = []
-nivel4 = []
-nivel5 = []
 
-niveles = [nivel1,nivel2,nivel3,nivel4,nivel5]
+niveles = []
 
 def getNivel(nivelactual):
     int(nivelactual)
@@ -13,23 +8,20 @@ def getNivel(nivelactual):
 
 
 def cargarNivelesDesdeElArchivo():
+
     archivo = open("seteoDeTableros.txt", "r")
-    return archivo
 
-def cargarNivel():
+    nivel=[]
 
-    archivoDeNiveles = cargarNivelesDesdeElArchivo()
+    for linea in archivo:
 
-    for linea in archivoDeNiveles:
-        linea = linea.rstrip("\n")
-        nivel1.append(linea)
-        if linea == "":
-            break
+        lineaComoLista = linea.split()
 
+        if ( len(lineaComoLista) > 0 ):
 
-    print(nivel1)
+            if (lineaComoLista[0] != 'A'):
+                nivel.append(lineaComoLista[1:])
+        else:
+            niveles.append(nivel)
+            nivel = []
 
-
-    print(linea)
-
-cargarNivel()

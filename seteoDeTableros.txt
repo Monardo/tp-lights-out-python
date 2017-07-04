@@ -1,29 +1,34 @@
-o,o,.,o,o
-o,.,o,.,o
-.,o,o,o,.
-o,.,o,.,o
-o,o,.,o,o
+   A B C D E
+1| o o . o o
+2| o . o . o
+3| . o o o .
+4| o . o . o
+5| o o . o o
 
-.,o,.,o,.
-o,o,.,o,o
-.,o,.,o,.
-o,.,o,.,o
-o,.,o,.,o
+   A B C D E
+1| . o . o .
+2| o o . o o
+3| . o . o .
+4| o . o . o
+5| o . o . o
 
-o,.,.,.,o
-o,o,.,o,o
-.,.,o,.,.
-o,.,o,.,.
-o,.,o,o,.
+   A B C D E
+1| o . . . o
+2| o o . o o
+3| . . o . .
+4| o . o . .
+5| o . o o .
 
-o,o,.,o,o
-.,.,.,.,.
-o,o,.,o,o
-.,.,.,.,o
-o,o,.,.,.
+   A B C D E
+1| o o . o o
+2| . . . . .
+3| o o . o o
+4| . . . . o
+5| o o . . .
 
-.,.,.,o,o
-.,.,.,o,o
-.,.,.,.,.
-o,o,.,.,.
-o,o,.,.,.
+   A B C D E
+1| . . . o o
+2| . . . o o
+3| . . . . .
+4| o o . . .
+5| o o . . .

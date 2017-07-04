@@ -1,12 +1,11 @@
 import log
 
 def mostrarNivel(nivel):
+
     print("   ", "A", "B", "C", "D", "E")
+
     numeroDeFila = 1
 
-
-
-"""
     for elemento in nivel:
         linea = ''
         for subelemento in elemento:
@@ -14,4 +13,3 @@ def mostrarNivel(nivel):
 
         print(str(numeroDeFila) + "| " + (linea))
         numeroDeFila += 1
- """

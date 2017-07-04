@@ -12,14 +12,14 @@ def jugar():
 
     if usuario.cantidadJugadas == 0:
 
-        nivelInicio = nivel.getNivel(usuario.nivelTablero)
-        Tablero.mostrarNivel(nivelInicio)
+       nivelInicio = nivel.getNivel(usuario.nivelJugador)
+       Tablero.mostrarNivel(nivelInicio)
 
     ingresoCoordenada = input("Ingrese la coordenada :  ")
     ingresoCoordenada.lower()
 
     pidoCoordenada.recibeCoordenadaDeJuego(ingresoCoordenada)
-    nivelactual = nivel.getNivel(usuario.nivelTablero)
+    nivelactual = nivel.getNivel(usuario.nivelJugador)
     coordenada = pidoCoordenada.recibeCoordenadaDeJuego(ingresoCoordenada)
     tableroNuevo = modificoTablero.coordenadaCambiaMatriz(nivelactual, coordenada)
     print("")

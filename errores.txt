@@ -43,3 +43,18 @@
 [2017-06-29 18:20:31.125699] Iniciando registro de errores
 [2017-06-29 18:26:23.172238] Iniciando registro de errores
 [2017-06-29 18:30:01.799743] Fin del regtistro de errores
+[2017-07-04 17:42:11.160335] Iniciando registro de errores
+[2017-07-04 17:42:40.445010] Iniciando registro de errores
+[2017-07-04 17:44:23.902927] Iniciando registro de errores
+[2017-07-04 17:47:35.490886] Iniciando registro de errores
+[2017-07-04 17:47:58.581206] Iniciando registro de errores
+[2017-07-04 17:48:29.980002] Iniciando registro de errores
+[2017-07-04 17:50:10.081728] Iniciando registro de errores
+[2017-07-04 17:53:01.566536] Iniciando registro de errores
+[2017-07-04 17:58:50.007466] Iniciando registro de errores
+[2017-07-04 18:08:55.702709] Iniciando registro de errores
+[2017-07-04 18:09:21.864205] Iniciando registro de errores
+[2017-07-04 18:09:41.546331] Iniciando registro de errores
+[2017-07-04 18:15:12.756275] Iniciando registro de errores
+[2017-07-04 18:16:54.877116] Iniciando registro de errores
+[2017-07-04 18:18:15.133706] Iniciando registro de errores
