@@ -58,3 +58,5 @@
 [2017-07-04 18:15:12.756275] Iniciando registro de errores
 [2017-07-04 18:16:54.877116] Iniciando registro de errores
 [2017-07-04 18:18:15.133706] Iniciando registro de errores
+[2017-07-11 17:19:58.357847] Iniciando registro de errores
+[2017-07-11 17:20:55.329147] Ingreso de coordenada invalida: a1ç5

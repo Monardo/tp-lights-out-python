@@ -10,7 +10,7 @@ import menu
 def jugar():
 
 
-    if usuario.cantidadJugadas == 0:
+    if usuario.cantidadJugadas == 0 and usuario.nivelJugador == 1:
 
        nivelInicio = nivel.getNivel(usuario.nivelJugador)
        Tablero.mostrarNivel(nivelInicio)
@@ -43,6 +43,8 @@ def jugar():
         if queQuiereHacerElJugador == 'Y':
             nivelactual = usuario.nivelTablero + 1
             proximoNivel = nivel.getNivel(nivelactual)
+            usuario.pasarDeNivel()
+            usuario.reseteoJugadas()
             Tablero.mostrarNivel(proximoNivel)
             jugar()
 

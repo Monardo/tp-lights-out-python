@@ -13,4 +13,8 @@ def pasarDeNivel():
     global nivelJugador
     nivelJugador = nivelJugador + 1
 
+def reseteoJugadas():
+    global cantidadJugadas
+    cantidadJugadas = 0
+
 
