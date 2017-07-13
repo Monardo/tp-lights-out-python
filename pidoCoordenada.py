@@ -8,6 +8,12 @@ def recibeCoordenadaDeJuego(ingresoCoordenada):
     listaLetraPermitidas = ['a', 'b', 'c', 'd', 'e']
     listaNumerosPermitidos = ['1', '2', '3', '4', '5']
 
+    if ingresoCoordenada == "":
+        print("Ud ha ingresado una coordenada invalida. ")
+        logger.guardar("Ingreso de coordenada invalida: " + ingresoCoordenada)
+        ingresoCoordenada = input("Reingrese la coordenada: ")
+        recibeCoordenadaDeJuego(ingresoCoordenada)
+
     if ingresoCoordenada == 's':
         print("        Ud esta saliendo del juego !!!!!!!!")
         exit
@@ -18,13 +24,18 @@ def recibeCoordenadaDeJuego(ingresoCoordenada):
         modoPredeterminado.iniciarModoPredeterminado()
         juego.jugar()
 
-
-    if ingresoCoordenada[0] not in listaLetraPermitidas or ingresoCoordenada[1] not in listaNumerosPermitidos:
-        print("Ud ha ingresado una coordenada invalida ")
+    if len(ingresoCoordenada) != 2:
+        print("Ud ha ingresado una coordenada invalida. ")
+        logger.guardar("Ingreso de coordenada invalida: " + ingresoCoordenada)
         ingresoCoordenada = input("Reingrese la coordenada: ")
         recibeCoordenadaDeJuego(ingresoCoordenada)
 
     if len(ingresoCoordenada) == 2:
+        if ingresoCoordenada[0] not in listaLetraPermitidas or ingresoCoordenada[1] not in listaNumerosPermitidos:
+            print("Ud ha ingresado una coordenada invalida ")
+            ingresoCoordenada = input("Reingrese la coordenada: ")
+            recibeCoordenadaDeJuego(ingresoCoordenada)
+
         coordenasEnLetrasAPosiciones = {'a': 0, 'b': 1, 'c': 2, 'd': 3, 'e': 4}
         coordenadaNumerica = int(ingresoCoordenada[1])-1
         coordenadaLetraTransformada = coordenasEnLetrasAPosiciones[ingresoCoordenada[0]]

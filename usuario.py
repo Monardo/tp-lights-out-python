@@ -16,5 +16,10 @@ def pasarDeNivel():
 def reseteoJugadas():
     global cantidadJugadas
     cantidadJugadas = 0
+    return cantidadJugadas
+
+def incrementaPuntaje():
+    global puntaje
+    puntaje += 300
 
 

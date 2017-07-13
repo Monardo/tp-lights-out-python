@@ -60,3 +60,25 @@
 [2017-07-04 18:18:15.133706] Iniciando registro de errores
 [2017-07-11 17:19:58.357847] Iniciando registro de errores
 [2017-07-11 17:20:55.329147] Ingreso de coordenada invalida: a1ç5
+[2017-07-13 00:04:09.148346] Iniciando registro de errores
+[2017-07-13 00:04:48.814256] Iniciando registro de errores
+[2017-07-13 00:38:46.701962] Iniciando registro de errores
+[2017-07-13 00:53:03.426667] Iniciando registro de errores
+[2017-07-13 01:02:37.026883] Iniciando registro de errores
+[2017-07-13 01:03:56.163023] Iniciando registro de errores
+[2017-07-13 01:08:04.994807] Iniciando registro de errores
+[2017-07-13 01:08:09.972617] Ingreso de coordenada invalida: 
+[2017-07-13 01:10:01.204014] Iniciando registro de errores
+[2017-07-13 01:10:05.746622] Ingreso de coordenada invalida: 
+[2017-07-13 01:11:25.928563] Iniciando registro de errores
+[2017-07-13 01:14:07.762271] Iniciando registro de errores
+[2017-07-13 01:22:13.456143] Iniciando registro de errores
+[2017-07-13 01:22:41.055993] Ingreso de coordenada invalida: rty
+[2017-07-13 01:24:15.177621] Iniciando registro de errores
+[2017-07-13 01:24:40.272465] Ingreso de coordenada invalida: rrr
+[2017-07-13 01:24:46.873277] Ingreso de coordenada invalida: 213412412
+[2017-07-13 01:24:59.958100] Ingreso de coordenada invalida: ...
+[2017-07-13 01:25:16.249529] Ingreso de coordenada invalida:  b 
+[2017-07-13 01:25:50.190589] Iniciando registro de errores
+[2017-07-13 01:25:53.908396] Fin del regtistro de errores
+[2017-07-13 01:25:57.468202] Iniciando registro de errores

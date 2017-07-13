@@ -9,17 +9,22 @@ import menu
 
 def jugar():
 
-
     if usuario.cantidadJugadas == 0 and usuario.nivelJugador == 1:
 
        nivelInicio = nivel.getNivel(usuario.nivelJugador)
        Tablero.mostrarNivel(nivelInicio)
 
+
+
+    if usuario.cantidadJugadas == 15:
+        print("***********  P E R D I O  ************")
+        menu.saludoBienvenida()
+
+    nivelactual = nivel.getNivel(usuario.nivelJugador)
+    print("")
     ingresoCoordenada = input("Ingrese la coordenada :  ")
     ingresoCoordenada.lower()
 
-    pidoCoordenada.recibeCoordenadaDeJuego(ingresoCoordenada)
-    nivelactual = nivel.getNivel(usuario.nivelJugador)
     coordenada = pidoCoordenada.recibeCoordenadaDeJuego(ingresoCoordenada)
     tableroNuevo = modificoTablero.coordenadaCambiaMatriz(nivelactual, coordenada)
     print("")
@@ -36,11 +41,12 @@ def jugar():
     else:
         print("")
         print("Ud ha ganado el nivel. Felicitaciones.  ")
-        print("Ud tiene 300 puntos")
+        usuario.incrementaPuntaje()
+        print("Ud tiene " + str(usuario.puntaje) + " puntos")
         print("")
-        queQuiereHacerElJugador = input("ingrese S para salir del juego, ingrese R para reiniciar o ingrese Y para seguir jugando ")
-
-        if queQuiereHacerElJugador == 'Y':
+        queQuiereHacerElJugador = str(input("ingrese S para salir del juego, ingrese R para reiniciar o ingrese Y para seguir jugando "))
+        queQuiereHacerElJugador.lower()
+        if queQuiereHacerElJugador == 'y':
             nivelactual = usuario.nivelTablero + 1
             proximoNivel = nivel.getNivel(nivelactual)
             usuario.pasarDeNivel()
@@ -48,11 +54,11 @@ def jugar():
             Tablero.mostrarNivel(proximoNivel)
             jugar()
 
-        if queQuiereHacerElJugador == 'S':
+        if queQuiereHacerElJugador == 's':
             print("        Ud esta saliendo del juego !!!!!!!!")
             exit
             menu.saludoBienvenida()
 
-        if queQuiereHacerElJugador == 'R':
+        if queQuiereHacerElJugador == 'r':
             print("Ud ha seleccionado reiniciar el juego")
             modoPredeterminado.iniciarModoPredeterminado()
